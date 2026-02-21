@@ -1,0 +1,44 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "agent": {
+    "default": {
+      "prompt": "You are the main AI orchestrator."
+    },
+    "architect": {
+      "mode": "subagent",
+      "prompt": "{file:./prompts/architect.md}"
+    },
+    "mentor": {
+      "mode": "subagent",
+      "prompt": "{file:./prompts/mentor.md}"
+    },
+    "implementer": {
+      "mode": "subagent",
+      "prompt": "{file:./prompts/implementer.md}"
+    },
+    "frontend": {
+      "mode": "subagent",
+      "prompt": "{file:./prompts/frontend.md}"
+    },
+    "backend": {
+      "mode": "subagent",
+      "prompt": "{file:./prompts/backend.md}"
+    },
+    "test": {
+      "mode": "subagent",
+      "prompt": "{file:./prompts/test.md}"
+    },
+    "ui": {
+      "mode": "subagent",
+      "prompt": "{file:./prompts/ui.md}"
+    },
+    "git": {
+      "mode": "subagent",
+      "prompt": "{file:./prompts/git.md}"
+    },
+    "quality": {
+      "mode": "subagent",
+      "prompt": "{file:./prompts/quality.md}"
+    }
+  }
+}
