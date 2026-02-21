@@ -1,0 +1,76 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BenchmarkCoreOutput",
+  "type": "object",
+  "properties": {
+    "project_name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "scores": {
+      "type": "object",
+      "properties": {
+        "research": {
+          "type": "number"
+        },
+        "technology": {
+          "type": "number"
+        },
+        "ux_ui": {
+          "type": "number"
+        },
+        "marketing": {
+          "type": "number"
+        },
+        "functional": {
+          "type": "number"
+        },
+        "total": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "research",
+        "technology",
+        "ux_ui",
+        "marketing",
+        "functional",
+        "total"
+      ]
+    },
+    "classification": {
+      "type": "string"
+    },
+    "strengths": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "weaknesses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "opportunities": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "project_name",
+    "scores",
+    "classification"
+  ]
+}

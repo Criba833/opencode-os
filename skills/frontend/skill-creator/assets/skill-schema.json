@@ -1,0 +1,54 @@
+{
+  "type": "object",
+  "required": [
+    "name",
+    "description",
+    "license",
+    "metadata"
+  ],
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string",
+      "enum": [
+        "Apache-2.0"
+      ]
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "author",
+        "version",
+        "scope"
+      ],
+      "properties": {
+        "author": {
+          "type": "string"
+        },
+        "version": {
+          "type": "string"
+        },
+        "scope": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "auto_invoke": {
+          "type": "string"
+        }
+      }
+    },
+    "allowed-tools": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+
+---
+
+### 2️⃣ assets/templates/figma-components.figma
+
+> Archivo Figma real que contiene:  
+- Buttons (Primary, Secondary, Disabled)  
+- Inputs and Forms  
+- Cards and Lists  
+- Navigation components  
+- Modal and Popups  
+- Variants for hover, focus, and disabled states  
+
+*(Se deja como plantilla de referencia para OpenCode, a incluir en la carpeta assets/templates/)*
+
+---

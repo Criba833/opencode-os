@@ -1,0 +1,18 @@
+flowchart TD
+A[Crear nueva Skill] --> B{¿La skill necesita recursos reutilizables?}
+B -->|Sí| C[Crear carpeta assets/]
+B -->|No| D{¿La skill enlaza documentación local?}
+C --> E[Colocar plantillas, schemas, snippets u otros recursos]
+D -->|Sí| F[Crear carpeta references/ con enlaces locales]
+D -->|No| G[No crear carpetas adicionales]
+
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style F fill:#9f9,stroke:#333,stroke-width:2px
+    style G fill:#f99,stroke:#333,stroke-width:2px
+
+Reglas resumidas
+Situación Carpeta Contenido
+Skill necesita plantillas, código, schemas assets/ Templates de código, JSON schemas, ejemplos
+Skill solo documenta patrones o reglas Ninguna SKILL.md basta
+Skill necesita enlazar documentación local references/ Archivos MDX o MD locales, sin URLs externas
+Skill depende de ambos assets/ + references/ Separar claramente recursos y documentación
